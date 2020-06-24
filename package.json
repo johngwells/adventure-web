@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/johngwells/adventure-web.git"
   },
-  "author": "",
+  "author": "John Wells",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johngwells/adventure-web/issues"
