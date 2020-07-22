@@ -116,7 +116,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 0;
+  z-index: -1;
   opacity: .15;
   overflow: hidden; }
   .bg-video__content {
@@ -350,8 +350,17 @@ body {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(62, 68, 68, 0.1);
     border-bottom: 3px solid #B2DFDB; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
   .form__input::-webkit-input-placeholder {
     color: #3e4444; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block; }
 
 .story {
   width: 75%;
