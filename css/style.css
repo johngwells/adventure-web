@@ -1,3 +1,22 @@
+/*
+0 - 600: Phone
+600 - 900: Tablet portrait
+900 - 1200: Tablet landscape
+1200 - 1800: main styles
+1800 + : Big desktop
+*/
+/*
+@mixin response-phone {
+  @media (max-width: 600px) {@content};
+}
+*/
+/*
+$breakpoint arguments:
+- phone
+- tabport
+- tabland
+- bigdesktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,6 +54,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
