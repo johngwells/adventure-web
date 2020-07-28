@@ -28,4 +28,9 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include response(tabport) { // width < 600
+    padding: 0; // 1rem = 8px, 8/16 = 50%
+  }
 }
