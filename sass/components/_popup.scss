@@ -10,6 +10,12 @@
   visibility: hidden;
   transition: all .3s;
 
+  @include response(tabport) {
+    top: 10rem;
+    height: 50vh;
+    margin-top: 10rem;
+  }
+
   &__content {
     @include absoluteCenter;
     width: 75%;
@@ -21,6 +27,10 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(.5);
     transition: all .4s .2s;
+
+    @include response(tabport) {
+      width: 100%;
+    }
   }
 
   &__left {
@@ -33,12 +43,15 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 10rem;
+
+    @include response(tabport) {
+      padding: 2rem 8rem;
+    }
   }
 
   &__img {
     display: block;
     width: 110%;
-    
   }
 
   &__text {

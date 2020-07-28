@@ -500,6 +500,11 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .popup {
+      top: 10rem;
+      height: 50vh;
+      margin-top: 10rem; } }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -514,6 +519,9 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all .4s .2s; }
+    @media (max-width: 56.25em) {
+      .popup__content {
+        width: 100%; } }
   .popup__left {
     width: 33.333333%;
     display: table-cell; }
@@ -522,6 +530,9 @@ body {
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 10rem; }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        padding: 2rem 8rem; } }
   .popup__img {
     display: block;
     width: 110%; }
